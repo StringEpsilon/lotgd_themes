@@ -1,0 +1,73 @@
+<!--!header-->
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//DE'>
+<html>
+	<head>
+		<title>{title}</title>
+		<link href='templates/Jade/theme.css' rel='stylesheet' type='text/css'>
+		{headscript}{script}
+	</head>
+	<body bgcolor='#004800' text="#CCCCCC">
+		<div align="right">
+			<img src='templates/Jade/logo.jpg'>
+			<br/>
+			<br>{motd} | {mail} | {petition} | {chat} | {forum}
+		</div>
+		<div style='position:absolute; top:25px; left:40px;'>
+			<div class="bordered">
+				<span class='pagetitle'>• {title}</span>
+			</div>
+		</div>
+		<p></p>
+		<main>
+			<div class="navbar" >
+				<nav class='nav bordered'>
+					{nav}
+				</div>
+				<div class="content bordered">
+					<div class="statblock bordered">
+						{stats}
+						<p>&nbsp;</p> 
+						{paypal}
+					</div>
+				<!--!footer-->
+			</div>
+		</main>
+		<footer class="bordered">
+			<div>
+				{copyright} Design: LoGD-HFS Template v1.0.2: &copy; Josh Canning 2004 of <a href='http://hfs.cjb.net/' target='_blank'>HFS</a><br> ({pagegen})
+			</div>
+			<div>
+				{source}
+			</div>
+		</footer>		
+	</body>
+</html>
+<!--!statstart-->
+<table cellpadding=2 cellspacing=0 class='charinfo' width='150'>
+<!--!stathead-->
+<tr><td class='charhead' colspan='2'><b>{title}</b></td></tr>
+<!--!statrow-->
+<tr><td class='charinfo'><b>{title}</b></td><td class='charinfo'>`^{value}</td></tr>
+<!--!statbuff-->
+<tr><td class='charinfo' colspan='2'><b>{title}:</b>`n
+{value}</td></tr>
+<!--!statend-->
+</table>
+<!--!navhead-->
+<span class="navhead">&#151;{title}&#151;<br></span>
+<!--!navhelp-->
+<span class="navhelp">{text}<br></span>
+<!--!navitem-->
+<a href="{link}"{accesskey}class='nav' {popup}>{text}<br></a>
+<!--!login-->
+<table width='212' height='234' border='0' cellpadding='0' cellspacing='0' background='images/logindragon.gif' class='noborder'>
+	<tr>
+		<td valign='bottom' align='center' class='noborder'>
+			{username}: <br><input name='name' accesskey='u' size='10'><br>
+			{password}:<br><input name='password' accesskey='p' type='password' size='10'><br>
+			<input type='submit' value='{button}' class='button'><br>
+			<img src='images/trans.gif' width='1' height='37' align='absmiddle' alt=''>
+			<img src='images/trans.gif' width='1' height='15'>
+		</td>
+	</tr>
+</table>

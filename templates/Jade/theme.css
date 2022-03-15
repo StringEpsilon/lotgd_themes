@@ -1,0 +1,213 @@
+/*
+This css file is part of the Legend of the Green Dragon version 0.9.7 and therefore subject to the GPLv2.
+
+License terms available here:
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
+
+/* CSS Document */
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+nav {
+	width: 190px;
+}
+
+
+a {
+	color: #D1FFD1;
+	text-decoration: none;
+}
+
+/*************** Nav ****************/
+
+.navhi {
+	color: #00FF00;
+	text-decoration: underline;
+}
+
+.navhead,
+a.nav,
+.navhelp {
+	padding: 2px;
+	display: block;
+	background-color: #004800;
+}
+
+.navhead {
+	color: #FFFFFF;
+	line-height: 16px;
+	font-weight: bold;
+}
+.navhelp {
+	background-color: #015D01;
+}
+
+a:hover.nav {
+	padding: 1px;
+    background-color: #015D01;
+	border-top: 1px solid #029402;
+	border-left: 1px solid #029402;
+	border-bottom: 1px solid #013901;
+	border-right: 1px solid #013901;
+}
+
+table.charinfo {
+	border: none;
+	width: 182px;
+}
+td.charhead {
+	background-color: #009900;
+	color: #FFFF00;
+}
+table.charinfo  td {
+	border-top: #009900 1px solid;
+}
+
+td.popupheader {
+	background-color: #333399;
+	height: 20px;
+}
+td.noborder {
+	border: none;
+}
+table.noborder {
+	border: none;
+}
+
+td.village {
+	background-image: url(../images/village.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+td.forest {
+	background-image: url(../images/forest.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+td.dragon {
+	background-image: url(../images/dragon.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.button {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #015D01;
+	border-top: 1px solid #029402;
+	border-left: 1px solid #029402;
+	border-right: 1px solid #013901;
+	border-bottom: 1px solid #013901;
+}
+
+input,
+.input ,
+select {
+	background-color: #015D01;
+	border: 1px solid #013901;
+	color: #CCCCCC;
+}
+table.vitalinfo {
+	background-color: #003300;
+	border: 1px solid #000000;
+	width: 182px;
+}
+a.motd {
+	color:#D1FFD1;
+}
+
+a.hotmotd,
+a:hover.motd {
+	font-weight: bold;
+}
+
+.pagetitle {
+	font-family: "Courier";
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+
+.colAttention { background-color: #00FF00; color: #FF0000;}
+.colWhiteBlack { background-color: #FFFFFF; color: #000000; }
+.colBack  { background-color:#00FFFF; color:#000000; }
+.trhead  { background-color:#990000; color:#FFFFFF; }
+.trlight { background-color:#330000; }
+.trdark  { background-color:#000000; }
+
+.bordered {
+	margin-bottom: 4px;
+	margin-top: 2px;
+	margin-right: 4px;
+	margin-left: 4px;
+	border-style: solid;
+	border-width: 15px 10px 12px 10px;
+	border-image: url(border.png) 15 10 12 10 repeat repeat;
+}
+.bordered > .bordered {
+	margin: 0;
+}
+
+.statblock {
+	float: right;
+	text-align: right;
+}
+
+/* Dirty hack to keep the style of the original layout w/o touching the PHP: */
+.statblock > :not(table, tr, td) {
+	display: block;
+	width: 100px;
+}
+.statblock > table {
+	text-align: left;
+}
+
+/*------------------------------ MAIN ------------------------------*/
+main {
+	display: flex;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+.content {
+	padding: 4px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+/*-------------------------- NAVBAR */
+
+
+.navbar {
+	flex-grow: 0;
+	flex-shrink: 1;
+	text-align: center;
+}
+
+footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	display: flex;
+	padding: 4px
+}
+footer > div:nth-child(1){
+	flex-grow: 1;
+}
+
+.bar {
+	background-color: #000000;
+	border: 1px solid black;
+	width: 100% !important;
+	height: 3px !important;
+}
+nav li, nav ul {
+	list-style: none;
+	padding: unset;
+	margin: unset;
+}

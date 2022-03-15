@@ -1,0 +1,95 @@
+/*
+This CSS file is directly derivative of files from, and/or was written as part of a fork of, 
+The Legend of The Green Dragon version 0.9.7
+And is therefore subject to the terms of the GPL 2.0.
+
+License terms available here: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
+
+@media (max-width: 480px)  {
+	body {
+		overflow-x: hidden;
+		width: 100vw;
+	}
+
+	.input, input{
+		max-width: 90vw;
+		overflow-x: hidden;
+	}
+
+	nav {
+		position: absolute;
+		z-index: 1000;
+		transform: translateX(-100%);
+		touch-action: none;
+		min-height: 100%;
+		max-width: 50vw;
+	}
+
+	.stats {
+		position: absolute;
+		z-index: 1000;
+		right: 0;
+		min-height: 100%;
+		width: 0;
+		max-width: 50vw;
+	}
+
+	.stats::before {
+		content: "<= [stats]";
+		display: block;
+		width: 6.25em;
+		position: absolute;
+		right: 0;
+	}
+	nav::before {
+		content: "[menu] =>";
+		display: block;
+		position: relative;
+		left: 110%;
+	}
+
+	.stats:focus,
+	.stats:focus-within,
+	nav:focus,
+	nav:focus-within {
+		transform: translateX(0);
+		transition: transform 200ms;
+		height: auto;
+		width: unset;
+		transition: width 200ms;
+		outline: none;
+	}
+
+	.stats > * {
+		display: none;
+
+	}
+	.stats:focus > *,
+	.stats:focus-within > * {
+		display: unset;
+	}
+
+	.stats:focus::before,
+	nav:focus::before,
+	.stats:focus-within::before,
+	nav:focus-within::before {
+		content: none;
+	}
+
+	.nav,
+	.navhead,
+	.navhelp {
+		line-height: 2em;
+	}
+	.content{
+		margin-top: 2em;
+	}
+
+	footer {
+		display:  none;
+	}
+	#logo {
+		display: none;
+	}
+}

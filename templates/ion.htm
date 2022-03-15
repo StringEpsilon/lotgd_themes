@@ -1,0 +1,101 @@
+<!---
+This HTML file is directly derivative of files from, and/or was written as part of a fork of, 
+The Legend of The Green Dragon version 0.9.7
+And is therefore subject to the terms of the GPL 2.0.
+
+License terms available here: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+--->
+
+<!--!header-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//DE">
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='/templates/ion/theme.css' rel='stylesheet' type='text/css'>
+	<link href='/templates/_mobile/mobile.css' rel='stylesheet' type='text/css'>
+
+	<title>{title}</title>
+
+	{headscript}
+	{script}
+</head>
+
+<body>
+	<header>
+		<div class="header-content">
+			<h1>
+				{title}
+			</h1>
+			<div class="header-links">
+				{motd}
+				{mail}
+				{petition}
+				{forum}
+				{chat}
+			</div>
+		</div>
+		<h2 id="logo">
+			Legend of the Green Dragon
+		</h2>
+	</header>
+	<main>
+		<div class="navbar">
+			<nav tabindex="-1">
+				{nav}
+			</nav>
+		</div>
+		<div class="content">
+			<!--!footer-->
+		</div>
+		<div class="stats" tabindex="-1">
+			<div class='stats-content '>
+				{stats}
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div>
+			{copyright}, Design: Chris Yarbrough ({pagegen})
+		</div>
+		<div>
+			{source}
+		</div>
+	</footer>
+</body>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script type="text/javascript" language="JavaScript" src="/templates/chat_prev.js" asp-append-version="true"></script>
+<script type="text/javascript" src="/templates/mobile.js"></script>
+
+</html>
+<!--!statstart-->
+<table cellpadding=2 cellspacing=0 class='charinfo' width='150'>
+	<!--!stathead-->
+	<tr>
+		<td class='charhead' colspan='2'><b>{title}</b></td>
+	</tr>
+	<!--!statrow-->
+	<tr>
+		<td class='charinfo'><b>{title}</b></td>
+		<td class='charinfo'>`^{value}</td>
+	</tr>
+	<!--!statbuff-->
+	<tr>
+		<td class='charinfo' colspan='2'><b>{title}:</b>`n{value}</td>
+	</tr>
+	<!--!statend-->
+</table>
+<!--!navhead-->
+<span class="navhead">{title}</span>
+<!--!navhelp-->
+<span class="navhelp">{text}</span>
+<!--!navitem-->
+<a href="{link}" {accesskey} class='nav' {popup}>{text}</a>
+<!--!login-->
+<div class="login">
+	<label for="name">{username}:</label>
+	<input name='name' accesskey='u' size='10'>
+	<label for="password">{password}:</label>
+	<input name='password' accesskey='p' type='password' size='10'>
+	<button type='submit' class='button'>{button}</button>
+</div>

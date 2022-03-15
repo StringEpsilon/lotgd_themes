@@ -1,0 +1,381 @@
+/*
+This CSS file is directly derivative of files from, and/or was written as part of a fork of, 
+The Legend of The Green Dragon version 0.9.7
+And is therefore subject to the terms of the GPL 2.0.
+
+License terms available here: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+*/
+
+@font-face {
+	font-family: Alice;
+	src: url(./ion/Alice-Regular.ttf);
+}
+
+@font-face {
+	font-family: Gidole;
+	src: url(./ion/Gidole-Regular.ttf);
+}
+
+
+/* CSS Document */
+body, td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+}
+
+body {
+	background-color: #131212;
+	color: #D0D0D0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	color: #C0D0C0;
+}
+
+/*------------------------------ HEADER ------------------------------*/
+
+header {
+	display: flex;
+	align-items: center;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-bottom: 1px wheat dotted;
+	border-bottom-width: 50%;
+	padding-bottom: 1em;
+}
+
+footer {
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.header-content {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.header-content>h1, h2 {
+	font-family: Alice;
+	margin: 0;
+	font-weight: initial;
+	text-align: center;
+}
+
+.header-links {
+	text-align: center;
+	flex: 1;
+}
+
+.header-links>a::before {
+	content: "-";
+	padding: 1 em;
+	text-decoration: none !important;
+	display: inline-block;
+}
+
+.header-links>a:last-child::after {
+	content: " - ";
+	text-decoration: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-links a:hover {
+	text-decoration: underline;
+}
+
+.header-links a.hot {
+	font-weight: bold;
+}
+
+/*------------------------------ MAIN ------------------------------*/
+main {
+	/*! margin: 1em; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex: 1;
+}
+
+nav,
+.stats {
+	flex-grow: 0;
+	flex-shrink: 1;
+	padding: 0.5em 0.5em 0 0.5em;
+	height: 100%;
+	background-color: #131212;
+	outline: none;
+}
+
+
+nav {
+	width: 14em;
+	border-right: 1px wheat dotted;
+	padding-bottom: 0;
+}
+
+.content {
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+
+.stats-content {
+	text-align: center;
+}
+
+/*------------------------------ Footer ------------------------------*/
+footer {
+	display: flex;
+	padding-top: 1em;
+	font-size: 0.8em;
+}
+
+footer>div:nth-child(1) {
+	flex-grow: 1;
+}
+
+/*------------------------------ Other ------------------------------*/
+nav>* {
+	padding-top: .2em;
+}
+
+.navhead {
+	display: block;
+	padding: 1px;
+	min-height: 1.4em;
+	line-height: 1.4em;
+	font-weight: bold;
+	text-align: center;
+	border: 1px dotted wheat;
+	border-radius: 2px;
+}
+
+.navhead:empty::before {
+	content: "~";
+}
+
+a {
+	text-decoration: none;
+}
+
+a.nav {
+	height: auto;
+	display: block;
+}
+
+a.nav::before {
+	content: "\2022  ";
+}
+
+.navhelp {
+	height: auto;
+	display: block;
+}
+
+a:hover.nav {
+	color: #C0F0C0;
+	text-decoration: underline dotted;
+}
+
+table, tr {
+	border: 1px solid wheat;
+	border-style: inset;
+	border-collapse: collapse;
+}
+
+table.charinfo {
+	border: none;
+	width: 150px;
+}
+
+td.charhead {
+	text-align: center;
+	background-color: black;
+	color: #F0F0C0;
+}
+
+table.nav {
+	width: 135px;
+}
+
+td.popupheader {
+	height: 20px;
+}
+
+td.noborder {
+	border: none;
+}
+
+table.noborder {
+	border: none;
+}
+
+td.village {
+	background-image: url(../images/village.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+td.forest {
+	background-image: url(../images/forest.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+td.dragon {
+	background-image: url(../images/dragon.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+select,
+.button {
+	cursor: pointer;
+	padding: 0.25em 1em 0.25em 1em;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #0E0D0D;
+	border: #F0F0C0 1px solid;
+	color: #F0F0C0;
+	border-radius: 2px;
+}
+
+.button-red {
+	border: #EF8080 1px solid;
+	color: #EF8080;
+}
+
+.button-green {
+	border: #80EF80 1px solid;
+	color: #80EF80;
+}
+
+.button:disabled {
+	color: #808080;
+	border-color: #808080;
+	border-style: dotted;
+	cursor: default;
+}
+
+select:hover:not(:disabled),
+.button:hover:not(:disabled) {
+	background-color: black;
+	box-shadow: #000000 2px;
+}
+
+input,
+.input {
+	padding: 0.25em;
+	max-width: 100%;
+	background-color: #0E0D0D;
+	border: #777 2px solid;
+	color: #D0D0D0;
+}
+
+table.vitalinfo {
+	width: 182px;
+}
+
+
+.navhi {
+	/* color: #00FF00; */
+	text-decoration: underline dotted;
+	color: #C0f0C0;
+	font-weight: bold;
+}
+
+
+table.alternate {
+	border-collapse: collapse;
+}
+
+table.alternate td {
+	border-left: 1px wheat dotted;
+	padding: 0.25em;
+}
+
+table.alternate>tbody>tr:nth-child(even) {
+	background-color: #131212;
+}
+
+table.alternate>tbody>tr:nth-child(odd) {
+	background-color: black;
+}
+
+.trhead {
+	/* background-color: wheat !important;
+	color: #131212 !important; */
+	text-emphasis: bold;
+	border-width: 2px;
+	height: 1.4em;
+	line-height: 1.4em;
+}
+
+.login {
+	margin-top: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.login>input,
+.login>button {
+	margin-bottom: 1em;
+}
+
+@media (max-width: 480px) {
+	nav {
+		box-shadow: 0px 4px 6px 2px black;
+	}
+
+	.stats {
+		box-shadow: 0px 4px 6px 2px black;
+		padding: unset;
+		padding-top: 0.5em;
+	}
+
+	.stats:focus {
+		padding: 0.5em;
+		margin-right: 0.5em;
+	}
+
+	.navhead {
+		margin-top: 0.25em;
+	}
+
+	.navhelp {
+		border: 1px dotted #C0C0C0;
+		margin-top: 0.25em;
+		margin-left: 0.25em;
+	}
+
+	.nav {
+		display: inline-block;
+		padding: 1px;
+		font-weight: bold;
+		text-align: center;
+		border: 1px dotted #C0f0C0;
+		margin-top: 0.25em;
+		margin-left: 0.25em;
+	}
+
+	.header-content{
+		flex-direction: column;
+	}
+}
