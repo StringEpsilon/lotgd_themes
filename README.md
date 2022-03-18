@@ -8,6 +8,14 @@ Because these templates are all developed for, and based on templates from, Lotg
 
 Some LotgD servers are still around and I thought it's a shame the markup is so old. I like the general styles though. Yar2 has always been my favorite template and it's somewhat magical that is somewhat works on mobile too, if you wriggle it a bit.
 
+Also, modern HTML can be much more accessible to people who need screenreaders. LotgD is not a great game for screenreaders to begin with, but if my modifications can help make it just a little bit more accessible, I'll take even a small win.
+
+## Compatibility
+
+I have not tested this on a vanilla 0.9.7 installation (it's actually hard to get running these days). You may run into some issues with missisng color codes, if you do not use automatically generated color CSS. You may also have to adjust some details in the templates to accomodate other modifications.
+
+#The themes
+
 ## Yar3
 
 Is an iteration on the classi yar2 template. I made the char info it's own column in the layout and fixed some paddings and margins - but otherwise it should look pretty much exactly as before.
