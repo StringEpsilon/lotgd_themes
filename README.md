@@ -18,10 +18,10 @@ By default, the mobile.css is also included, which makes some tweaks on small sc
 
 Some screenshots how it looks on mobile:
 
-* [Login](screenshot/yar3/yar3.png)
-* [Login with open navigation](screenshot/yar3/login_navbar.png)
-* [Login with the sidebar open](screenshot/yar3/login_sidebar.png)
-* [Village with the sidebar open](screenshot/yar3/village_sidebar.png)
+* [Login](screenshots/yar3/yar3.png)
+* [Login with open navigation](screenshots/yar3/login_navbar.png)
+* [Login with the sidebar open](screenshots/yar3/login_sidebar.png)
+* [Village with the sidebar open](screenshots/yar3/village_sidebar.png)
 
 ## Ion
 
