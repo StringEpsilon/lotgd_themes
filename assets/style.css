@@ -27,7 +27,7 @@ body {
 header {
 	margin-top: 4px;
 	background-color: #333399;
-	background-image: url(assets/images/headbkg.GIF);
+	background-image: url(images/headbkg.GIF);
 	height: 66px;
 	display: flex;
 }
@@ -132,7 +132,7 @@ nav,
 
 /* - - - Footer  - - -*/
 footer {
-	background-image: url(assets/images/rule.gif);
+	background-image: url(images/rule.gif);
 	background-repeat: repeat-x;
 	background-position: top;
 	display: flex;
@@ -144,7 +144,7 @@ footer>div:nth-child(1) {
 }
 
 td.footer {
-	background-image: url(assets/images/rule.gif);
+	background-image: url(images/rule.gif);
 	background-repeat: repeat-x;
 	background-position: top;
 }
