@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -14,11 +14,11 @@
 				{{ page.title }}
 			</h1>
 		</div>
-		<img class="header-image" id="logo" src='images/title.gif'>
+		<img class="header-image" id="logo" src='assets/images/title.gif'>
 	</header>
 	<main>
 		<nav tabindex="-1">
-			<img src='images/uscroll.GIF' width='142' height='11' alt=''>
+			<img src='assets/images/uscroll.GIF' width='142' height='11' alt=''>
 			{% for item in site.nav %}
 				{% if item.href contains 'http' %}
 					<a href="{{ item.href }}"  class='nav'>{{ item.title }}</a>
@@ -26,7 +26,7 @@
 					<a href="{{ item.href | relative_url }}"  class='nav'>{{ item.title }}</a>
 				{% endif %}
 			{% endfor %}
-			<img src='images/lscroll.GIF' width='142' height='11' alt=''>
+			<img src='assets/images/lscroll.GIF' width='142' height='11' alt=''>
 		</nav>
 		<div class="content">
 			{% if page.subtitle %}
@@ -44,10 +44,11 @@
 
 	<footer>
 		<div>
-			Design: Chris Yarbrough
+			Design: Chris Yarbrough, <br/>
+			Jekyll Theme: String.Epsilon
 		</div>
 		<div>
-			Jekyll Theme: String.Epsilon
+			<a href="{{ site.github.repository_url }}" class="btn">Source</a>
 		</div>
 	</footer>
 </body>

@@ -6,7 +6,9 @@ And is therefore subject to the terms of the GPL 2.0.
 License terms available here: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
-/* CSS Document */
+html {
+	height: 100%;
+}
 body, td {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -25,7 +27,7 @@ body {
 header {
 	margin-top: 4px;
 	background-color: #333399;
-	background-image: url(/images/headbkg.GIF);
+	background-image: url(/assets/images/headbkg.GIF);
 	height: 66px;
 	display: flex;
 }
@@ -101,7 +103,6 @@ nav, .stats {
 nav,
 .navbar {
 	width: 142px;
-
 }
 
 .content {
@@ -131,7 +132,7 @@ nav,
 
 /* - - - Footer  - - -*/
 footer {
-	background-image: url(/images/rule.gif);
+	background-image: url(/assets/images/rule.gif);
 	background-repeat: repeat-x;
 	background-position: top;
 	display: flex;
@@ -143,7 +144,7 @@ footer>div:nth-child(1) {
 }
 
 td.footer {
-	background-image: url(/images/rule.gif);
+	background-image: url(/assets/images/rule.gif);
 	background-repeat: repeat-x;
 	background-position: top;
 }
@@ -231,11 +232,6 @@ table.nav {
 	width: 135px;
 }
 
-td.popupheader {
-	background-color: #333399;
-	background-image: url(/images/headbkg.GIF);
-	height: 20px;
-}
 input {
 	background-color: #433828;
 	border: 1px solid #806B4D;
@@ -311,24 +307,6 @@ thead {
 .bar div {
 	height: 100%;
 	max-width: 100%;
-}
-
-/*************** Login form ***************/
-.login {
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	flex-direction: column;
-	width: 212px;
-	height: 234px;
-	background-image: url('/images/logindragon.gif');
-}
-
-.login>* {
-	display: block;
-}
-.login>button {
-	margin-bottom: 37px;
 }
 
 @media (max-width: 720px)  {
